@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+/* Dahlia */
+@font-face {
+  font-family: 'Dahlia';
+  src: url('./fonts/dahlia-medium.woff2') format('woff2'),
+       url('./fonts/dahlia-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+  Neue Haas Grotesk Display Pro
+  → utilise d'abord la police système Helvetica Neue (identique à NHG),
+    puis Inter comme fallback open-source
+*/
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: local('Helvetica Neue'), local('HelveticaNeue'), local('Inter');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('./fonts/NeueHaasDisplayLight.ttf') format('woff2'),
+  url('./fonts/NeueHaasDisplayLight.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

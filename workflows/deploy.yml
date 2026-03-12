@@ -1,0 +1,53 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+# Permissions nécessaires pour déployer sur GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Installation des dépendances
+        run: npm install
+
+      - name: Build du projet
+        run: npm run build
+        env:
+          # ⚠️ Remplace 'portfolio-' par le nom EXACT de ton repo GitHub
+          VITE_BASE: /portfolio-/
+
+      - name: Configuration GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload des fichiers buildés
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Déploiement sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
