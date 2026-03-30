@@ -16,8 +16,8 @@ const projectsData = {
   // ── BNF ─────────────────────────────────────────────────────────────────
   bnf: {
     title: 'BNF',
-    subtitle: 'Les Évangiles de la Sainte-Chapelle',
-    category: 'Borne interractive',
+    subtitle: 'borne interactive & web design',
+    category: 'borne interractive',
     description: 'Dans le cadre d\'un partenariat entre la BNF de Richelieu et Gobelins Paris, j\'ai développé une borne interactive présentant différentes reliures du 7e siècle.',
     detailDescription: 'L\'interface a d\'abord été conçue sur Figma, puis entièrement développée en HTML / CSS / JS. L\'objectif était de faire découvrir ces reliures de façon ludique, lors d\'une future exposition, à travers différents jeux et activités de reconstitution.',
     designer: 'Thaïs L\'Hocine',
@@ -152,7 +152,7 @@ function ProjectHero({
 
       {/* 📝 TITRE PRINCIPAL — modifier clamp(min, vw, max) */}
       <motion.h1
-        style={{ y: titleY, opacity: titleOpacity, fontSize: 'clamp(2.8rem, 6vw, 6.5rem)', lineHeight: 0.9, fontFamily: "'Dahlia', 'Bodoni Moda', serif" }}
+        style={{ y: titleY, opacity: titleOpacity, fontSize: 'clamp(2.8rem, 6vw, 6.5rem)', lineHeight: 0.9, fontFamily: "'PP Mondwest', serif" }}
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 0.75, ease: [0.6, 0.01, 0.05, 0.95] }}
@@ -167,7 +167,7 @@ function ProjectHero({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.88 }}
         className="text-white/50"
-        style={{ fontSize: 'clamp(0.95rem, 1.3vw, 1.3rem)', marginTop: 'clamp(1rem, 2vw, 2rem)', fontFamily: NHG }}
+        style={{ fontSize: 'clamp(0.95rem, 1.3vw, 1.3rem)', marginTop: 'clamp(1rem, 2vw, 2rem)', fontFamily: "'Neue Haas Grotesk Display Pro', serif" }}
       >
         {subtitle}
       </motion.p>
@@ -186,7 +186,7 @@ function ProjectHero({
         >
           <p
             className="text-white/80 leading-relaxed"
-            style={{ fontSize: 'clamp(0.8rem, 1vw, 1rem)', fontFamily: NHG }}
+            style={{ fontSize: 'clamp(0.8rem, 1vw, 1rem)', fontFamily: "'Neue Haas Grotesk Display Pro', serif"  }}
           >
             {description}
           </p>
@@ -284,7 +284,7 @@ function NextProjectSection({ slug, title }: { slug: string; title: string }) {
           transition={{ duration: 0.8, ease: [0.6, 0.01, 0.05, 0.95] }}
           viewport={{ once: true }}
           className="text-white font-light tracking-tight mb-14 transition-opacity group-hover:opacity-40"
-          style={{ fontSize: 'clamp(2.5rem, 7vw, 7rem)', lineHeight: 0.88, fontFamily: "'Dahlia', serif" }}
+          style={{ fontSize: 'clamp(2.5rem, 7vw, 7rem)', lineHeight: 0.88, fontFamily: "'PP Mondwest', serif" }}
         >
           {title}
         </motion.h2>

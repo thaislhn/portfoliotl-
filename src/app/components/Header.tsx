@@ -47,7 +47,7 @@ export function Header() {
           <ul className="flex gap-8 text-[11px] tracking-[0.18em] uppercase">
             {(['index', 'about', 'cv'] as const).map((key) => {
               const to = key === 'index' ? '/' : `/${key}`;
-              const label = key === 'index' ? 'Index' : key === 'about' ? 'About' : 'CV';
+              const label = key === 'index' ? 'Accueil' : key === 'about' ? 'À propos' : 'CV';
               return (
                 <li key={key}>
                   <Link

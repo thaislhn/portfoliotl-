@@ -32,3 +32,9 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* index.css */
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('/fonts/NeueHaasGrotesk.woff2') format('woff2');
+}

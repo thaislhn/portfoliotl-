@@ -126,7 +126,7 @@
 
   body {
     @apply bg-black text-white;
-    font-family: 'Neue Haas Grotesk Display Pro',;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: white;
   }
@@ -139,11 +139,10 @@
 
   /* Custom font classes */
   .font-display {
-    font-family: 'Dahlia', serif;
+    font-family: 'PP Mondwest',
   }
 
 
-  /* 📝 Neue Haas Grotesk Display Pro - Police principale */
   .font-haas {
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-weight: 450;
@@ -151,29 +150,34 @@
 
 
   h1 {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-size: 2rem;
     font-weight: 400;
   }
 
   h2 {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.5;
   }
 
   h3 {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-size: var(--text-lg);
     font-weight: var(--font-weight-medium);
     line-height: 1.5;
   }
 
   h4 {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-size: var(--text-base);
     font-weight: var(--font-weight-medium);
     line-height: 1.5;
   }
 
   label {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-size: var(--text-base);
     font-weight: var(--font-weight-medium);
     line-height: 1.5;

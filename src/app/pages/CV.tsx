@@ -8,9 +8,8 @@ const fadeUp = {
 };
 
 export function CV() {
-  // 📄 Remplace cette URL par le lien direct vers ton PDF hébergé (ex: Cloudinary)
-  const CV_PDF_URL = 'https://res.cloudinary.com/diai5g2u8/image/upload/v1773151183/cv1-2_1_bqjz8s.png';
 
+  const CV_PDF_URL = '/cv-thais-lhocine..pdf';
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-black">
       <CustomCursor />

@@ -182,7 +182,7 @@ export function About() {
               <div className="relative aspect-[3/4] w-full max-w-md mx-auto lg:ml-auto overflow-hidden rounded-2xl shadow-2xl">
                 {/* Image */}
                 <img
-                  src="https://images.unsplash.com/photo-1758600587839-56ba05596c69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHBvcnRyYWl0JTIwbmV1dHJhbHxlbnwxfHx8fDE3NzE1MTExNzh8MA&ixlib=rb-4.1.0&q=80&w=600"
+                  src="https://res.cloudinary.com/diai5g2u8/image/upload/c_crop,g_north_west,h_1067,w_918/ppp_j4f06y.png"
                   alt="Thaïs L'Hocine"
                   className="w-full h-full object-cover"
                 />

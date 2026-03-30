@@ -307,7 +307,7 @@ export function Home() {
           {/* Titre projet */}
           <motion.h2
             className="text-white tracking-tight mb-10"
-            style={{ fontSize: 'clamp(2.2rem, 7vw, 5.5rem)', lineHeight: 1, fontFamily: "'Dahlia', serif" }}
+            style={{ fontSize: 'clamp(2.2rem, 7vw, 5.5rem)', lineHeight: 1, fontFamily: "'PP Mondwest', serif" }}
           >
             {projects[activeIndex].title}
           </motion.h2>
@@ -326,7 +326,7 @@ export function Home() {
               {/* Bouton avec bordure fine */}
               <span className="flex items-center gap-2 px-5 py-2.5 border border-white/25 text-white/70 hover:border-white/60 hover:text-white text-[11px] tracking-[0.2em] uppercase transition-all duration-300 group-hover:bg-white/5"
                 style={{ fontFamily: "'Neue Haas Grotesk Display Pro'" }}>
-                <span>View Project</span>
+                <span>Voir projet</span>
                 <span className="text-xs">↗</span>
               </span>
             </motion.span>
