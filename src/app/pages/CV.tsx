@@ -9,7 +9,7 @@ const fadeUp = {
 
 export function CV() {
 
-  const CV_PDF_URL = 'public/cv-thais-lhocine.pdf';
+  const CV_PDF_URL = 'https://drive.google.com/file/d/1kU7I4On9wR7dTFxnobb5mkcwL3oGQkG5/view?usp=sharing';
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-black">
       <CustomCursor />
